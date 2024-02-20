@@ -17,7 +17,7 @@ function getStorage() {
 
 const api = "4eeb7fc8"
 async function getMovies(query){
-    const objData = await fetch(`https://www.omdbapi.com/?apikey=${api}&s=${query}`);
+    const objData = await fetch(`http://www.omdbapi.com/?apikey=${api}&s=${query}`);
     const strData = await objData.json();
     console.log(strData);
     renderData(strData);
